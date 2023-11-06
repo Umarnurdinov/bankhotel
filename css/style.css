@@ -308,3 +308,112 @@ a {
     display: none;
   }
 }
+.rooms {
+  background: #fffcf6;
+  padding: 30px;
+}
+.rooms__texts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rooms-text1 {
+  color: var(--Text, #1b3b36);
+  font-family: Miracle;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.rooms-text2 {
+  color: var(--Text, #1b3b36);
+  font-family: Helvetica Neue LT Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.rooms__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10pc 0;
+}
+.rooms__title1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rooms__since__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 249px;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 99px;
+  border: 1px solid var(--Primary-color, #313f38);
+  opacity: 0.48;
+}
+
+.rooms__since-text {
+  color: var(--Text, #1b3b36);
+  font-family: Helvetica Neue LT Std;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.rooms__title1-text1 {
+  color: var(--Text, #1b3b36);
+  font-family: Miracle;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: capitalize;
+}
+.rooms__title1-text2 {
+  max-width: 335px;
+  color: var(--Text, #1b3b36);
+  font-family: Helvetica Neue LT Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.rooms__title2 {
+  color: rgba(27, 59, 54, 0.32);
+  font-family: Helvetica Neue LT Std;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.rooms__title2-img {
+  width: 100%;
+}
+@media screen and (max-width: 1152px) {
+  .rooms__since__title {
+    display: none;
+  }
+  .rooms__title {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .rooms-text1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rooms-text1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
