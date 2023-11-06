@@ -68,3 +68,119 @@ a {
     display: none;
   }
 }
+.menu {
+  padding: 20px 0;
+}
+.menu__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__logo__bankhotel {
+  display: flex;
+}
+.menu__logo-bank {
+  color: var(--White, #fffcf6);
+  font-family: Miracle;
+  font-size: 170px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.menu__logo-hotel {
+  color: var(--Secondary-color, #fcd043);
+  font-family: Miracle;
+  font-size: 170px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.menu__logo-menu {
+  color: var(--Secondary-color, #fcd043);
+  font-family: Helvetica Neue LT Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.menu__since__title {
+  background: url(/images/since.svg) no-repeat;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu__since-text {
+  color: var(--White, #fffcf6);
+  font-family: Helvetica Neue LT Std;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.menu__since-text2 {
+  color: var(--White, #fffcf6);
+  font-family: Helvetica Neue LT Std;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 60px;
+}
+.a1 {
+  position: relative;
+}
+.menu__btn {
+  position: absolute;
+  right: 0;
+}
+.menu__button {
+  background: transparent;
+  border: none;
+}
+.menu__end {
+  display: flex;
+}
+@media screen and (max-width: 1150px) {
+  .menu__since__title {
+    display: none;
+  }
+  .menu__since-text2 {
+    padding: 0;
+  }
+  .menu__end {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
+  .a1 {
+    display: none;
+  }
+  .menu__btn {
+    position: relative;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .menu__btn {
+    display: none;
+  }
+  .menu__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .menu__logo-bank {
+    font-size: 60px;
+  }
+  .menu__logo-hotel {
+    font-size: 60px;
+  }
+}
